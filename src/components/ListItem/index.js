@@ -1,5 +1,13 @@
 const ListItem = props => {
   const {listData} = props
-  return <h1>{listData}</h1>
+  const {restaurantName, restaurantImage} = listData
+
+  return (
+    <div>
+      <h1>{restaurantName}</h1>
+      <p>My Orders</p>
+      <img src={restaurantImage} alt={restaurantImage} />
+    </div>
+  )
 }
 export default ListItem
